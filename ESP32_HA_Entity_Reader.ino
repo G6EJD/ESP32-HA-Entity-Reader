@@ -91,19 +91,27 @@ void DecodeEntity(String EntityName, String input) {
   
   Serial.println(String(friendlyName) + " = " + String(state) + String(unit_of_measurement) + " (" + EntityName + ")");
 }  
+/* Example Output:
 
-/*
-	object		{7}
+Updating... --------------------------------------
+Wind Speed Last = 2.0mph (sensor.windspeed)
+Wind Direction Last = 206° (sensor.winddirection)
+Temperature = 5.7°C (sensor.temp)
+Humidity = 96.6% (sensor.hum)
+
+Example JSON response:
+
+object		{7}
     entity_id	:	sensor.hum
     state	:	96.7
-	attributes		{3}
+attributes		{3}
     unit_of_measurement	:	%
     device_class	:	humidity
     friendly_name	:	Humidity
     last_changed	:	2025-01-01T15:30:33.916545+00:00
     last_reported	:	2025-01-01T15:30:33.916545+00:00
     last_updated	:	2025-01-01T15:30:33.916545+00:00
-	context		{3}
+context		{3}
     id	:	01JGH7TW9V0QSSM1Q7VF1M758R
     parent_id	:	null
     user_id	:	null
